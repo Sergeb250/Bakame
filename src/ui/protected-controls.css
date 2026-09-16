@@ -1,0 +1,17 @@
+select[data-protected] { display: none !important; }
+.protected-select { font: inherit; color: inherit; background: transparent; border: 0; cursor: pointer; white-space: nowrap; -webkit-app-region: no-drag; }
+.protected-select:focus-visible { outline: 2px solid #88baff; outline-offset: 2px; }
+.protected-select:disabled { opacity: .5; cursor: default; }
+.protected-floating { position: fixed; z-index: 100000; box-sizing: border-box; border: 1px solid #525966; border-radius: 8px; background: #20232a; color: #f4f5f7; font: 12px/1.4 system-ui, sans-serif; padding: 5px; -webkit-app-region: no-drag; }
+.protected-listbox { max-height: 240px; overflow-y: auto; }
+.protected-listbox button { display: block; width: 100%; text-align: left; padding: 7px 9px; border: 0; border-radius: 4px; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+.protected-listbox button[aria-selected="true"] { background: #354961; }
+.protected-listbox button:focus, .protected-listbox button:hover { outline: none; background: #46617d; }
+.protected-listbox button:disabled { opacity: .4; cursor: default; }
+.protected-tooltip { pointer-events: none; padding: 8px; }
+.protected-backdrop { position: fixed; inset: 0; z-index: 200000; background: #0009; display: grid; place-items: center; -webkit-app-region: no-drag; }
+.protected-dialog { width: min(340px, 90vw); box-sizing: border-box; border: 1px solid #525966; border-radius: 12px; background: #20232a; color: #f4f5f7; padding: 22px; font: 14px/1.5 system-ui, sans-serif; text-align: right; }
+.protected-dialog p { text-align: left; margin: 0 0 20px; }
+.protected-dialog button { border: 1px solid #697485; border-radius: 6px; color: inherit; background: #343b46; padding: 7px 16px; margin-left: 8px; cursor: pointer; }
+.protected-dialog .protected-accept { background: #8a3344; }
+.protected-dialog button:focus-visible { outline: 2px solid #88baff; outline-offset: 2px; }

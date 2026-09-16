@@ -34,13 +34,12 @@ npm run build:win
 node scripts/verify-windows-package.js
 ```
 
-Build files are created in `release/`:
+Download executable from project github project  releases:
 
-| File | Purpose |
-| --- | --- |
-| `bakame-Setup-1.0.1.exe` | Main adaptive installer. |
+
+
 | `bakame-Service-Setup-1.0.1-x64.exe` | Same installer with service filename. |
-| `bakame-Portable-1.0.1-x64.exe` | Portable Windows build. |
+
 
 Run normally for background mode. Run as administrator to install and start the service.
 

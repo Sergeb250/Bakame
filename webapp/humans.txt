@@ -1,0 +1,34 @@
+/* OpenCluely — humans.txt
+   https://opencluely.techycsr.dev/humans.txt
+*/
+
+# humans.txt — credits the people behind OpenCluely.
+
+# BAKAME EDITION
+
+  Customized and enhanced by: Serge Benit
+  GitHub: https://github.com/Sergeb250
+
+# ORIGINAL OPENCLUELY TEAM
+
+  Developer & maintainer: TechyCSR
+  Site: https://techycsr.dev
+  GitHub: https://github.com/TechyCSR
+
+# SITE
+
+  Standards: HTML5, CSS, vanilla JavaScript
+  Components: Electron, Tailwind CSS
+  Components: PrismJS for syntax highlighting
+  AI: Google Gemini API
+  Speech-to-text: OpenAI Whisper, Azure Speech Services
+
+# THANKS
+
+  Open source community — for the libraries and inspiration that make this possible.
+  Early users — for the feedback that shaped the project.
+
+# NO TRACKING
+
+  No analytics, no telemetry, no third-party trackers on this site.
+  This page is the one place where we politely ask you to be tracked.

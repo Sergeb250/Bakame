@@ -1,0 +1,17 @@
+# OpenCluely security disclosures
+# https://opencluely.techycsr.dev/.well-known/security.txt
+# Format: https://securitytxt.org/
+
+Contact: mailto:security@opencluely.techycsr.dev
+Contact: https://github.com/TechyCSR/OpenCluely/security/advisories/new
+Contact: https://github.com/TechyCSR/OpenCluely/issues
+
+Expires: 2027-12-31T23:59:59z
+Preferred-Languages: en
+Canonical: https://opencluely.techycsr.dev/.well-known/security.txt
+
+# OpenCluely is open source under the MIT license. There is no paid
+# security bounty program, but genuine reports are welcomed and credited.
+
+Policy: https://github.com/TechyCSR/OpenCluely/blob/main/SECURITY.md
+Acknowledgments: https://github.com/TechyCSR/OpenCluely/security/advisories

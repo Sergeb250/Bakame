@@ -1,0 +1,69 @@
+{
+  "name": "OpenCluely — Invisible AI Interview Copilot",
+  "short_name": "OpenCluely",
+  "description": "The free, open-source AI interview copilot that stays invisible to Zoom, Meet, Teams, Discord, and OBS screen sharing.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "categories": [
+    "productivity",
+    "developer",
+    "education",
+    "utilities"
+  ],
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon-16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "OpenCluely — the invisible AI interview copilot"
+    }
+  ],
+  "publisher": {
+    "name": "Serge Benit (customized bakame edition)",
+    "url": "https://github.com/Sergeb250"
+  },
+  "originalAuthor": {
+    "name": "TechyCSR",
+    "url": "https://techycsr.dev"
+  }
+}

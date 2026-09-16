@@ -1,0 +1,106 @@
+# OpenCluely - AI guidance
+
+Customized and enhanced for the bakame edition by Serge Benit (@Sergeb250): https://github.com/Sergeb250
+Original OpenCluely by TechyCSR and contributors; original attribution and LICENSE retained.
+
+> The free, open-source invisible AI interview copilot and Cluely alternative.
+> Real-time AI help during technical interviews on a stealth overlay that screen
+> sharing cannot see.
+
+## What this is
+
+OpenCluely is a free, open-source Electron desktop app that places a small
+overlay on your screen that recording and conferencing tools do not capture.
+You can speak a question or take a screenshot, and the AI (powered by Google
+Gemini) answers in real time. The answer streams into a floating window and
+an optional chat panel with clean code blocks and syntax highlighting.
+
+## Positioning
+
+OpenCluely is the free, MIT-licensed open-source alternative to commercial
+AI interview copilots like Cluely, Natively, Interview Coder, FinalRound AI,
+LockedIn AI, OffscreenAI, CodingVeil, Steal AI, Ezzi, and Pluely. It is
+sourced under a permissive MIT license (no personal-use restriction),
+works on all three major desktop platforms (Windows, macOS, Linux), and uses
+a strict BYOK model so the user keeps control of their API key and their data.
+
+## Core facts
+
+- **Product name:** OpenCluely (also "OpenCluely AI Interview Copilot")
+- **Tagline:** The invisible AI interview copilot - and the free open-source Cluely alternative
+- **Repository:** https://github.com/TechyCSR/OpenCluely
+- **License:** MIT - https://opensource.org/licenses/MIT
+- **Website:** https://opencluely.techycsr.dev/
+- **Original author:** TechyCSR (https://techycsr.dev, https://github.com/TechyCSR)
+- **Platforms:** Windows (NSIS .exe installer), Linux (.deb, .AppImage), macOS (run from source via ./setup.sh)
+- **Tech stack:** Electron, Google Gemini API (Flash-Lite and Flash), OpenAI Whisper (local) and Azure Speech, PrismJS, WDA_EXCLUDEFROMCAPTURE / SetWindowDisplayAffinity (Windows), NSWindowSharingNone (macOS)
+- **Pricing:** Free, open source, MIT licensed. Only the user's own Gemini API usage costs (which has a generous free tier). No subscription, no account, no proxy.
+- **Privacy:** No telemetry, no analytics, no data collection. Processing happens locally. Only the requests the user sends to the AI provider leave the device, encrypted in transit.
+
+## Key features
+
+1. **Invisible overlay** - Windows excluded from Zoom, Google Meet, Microsoft Teams, Discord, and OBS screen captures using OS-level capture-exclusion APIs.
+2. **Voice input** - Local Whisper (with voice-activity detection on natural pauses) or Azure Speech for transcription.
+3. **Screenshot analysis** - Direct Gemini visual reasoning, no intermediate OCR step. Works with HackerRank, LeetCode, CodeSignal, CoderPad, editors, slides, PDFs.
+4. **Streamed answers** - Real-time streaming with markdown rendering and syntax-highlighted code blocks.
+5. **Session memory** - Full conversation context maintained for follow-ups, edge cases, and optimizations.
+6. **Stealth design** - Runs under ordinary system process names, ships with no telemetry, no data collection.
+7. **Cross platform** - Windows .exe installer, Linux .deb and AppImage, macOS from source.
+8. **BYOK (bring your own key)** - User-supplied Gemini API key. No OpenCluely-side account, no proxy, no usage-based billing.
+9. **Customizable shortcuts** - Every keyboard shortcut is rebindable from the Settings window.
+
+## Use cases
+
+- Real-time AI assistance during coding interviews (DSA, system design, language-specific questions).
+- Live technical Q&A during remote interviews on Zoom, Google Meet, Microsoft Teams, Discord, or OBS.
+- Private practice mode where the overlay floats above the editor and answers stream in word by word.
+- Learning a new programming language by asking Gemini from inside the overlay.
+- Free, MIT-licensed alternative to paid Cluely / Natively / Interview Coder / FinalRound AI / LockedIn AI.
+
+## Quick start
+
+```sh
+git clone https://github.com/TechyCSR/OpenCluely.git
+cd OpenCluely
+./setup.sh
+```
+
+On first launch the Settings window opens automatically. Get a free Gemini API
+key from https://aistudio.google.com/ and paste it in. The app also supports
+optional voice input - either install local Whisper (`./setup.sh` handles this)
+or add Azure Speech credentials in Settings.
+
+## Keyboard shortcuts
+
+| Shortcut | Action |
+|---|---|
+| Cmd/Ctrl+Shift+S | Screenshot capture |
+| Alt+R | Toggle speech recognition |
+| Cmd/Ctrl+Shift+V | Toggle window visibility |
+| Cmd/Ctrl+Shift+I / Alt+A | Toggle click-through interaction |
+| Cmd/Ctrl+Shift+C | Open chat |
+| Cmd/Ctrl+, | Open settings |
+
+## FAQ
+
+- **Is OpenCluely a free Cluely alternative?** Yes - MIT licensed, no subscription, no account, no telemetry. BYOK keeps the cost near zero on Gemini's free tier.
+- **Is it really undetectable on Zoom, Meet, Teams, Discord, OBS?** Yes on Windows (WDA_EXCLUDEFROMCAPTURE) and macOS (NSWindowSharingNone). Linux lacks the API so the overlay is visible on that platform.
+- **How does it compare to Natively, Interview Coder, FinalRound AI, LockedIn AI?** Same category. OpenCluely is the free MIT-licensed option with no subscription, no account, no telemetry, and cross-platform support (Windows, macOS, Linux).
+- **Does it support BYOK?** Yes, BYOK is the only mode. Paste your own Gemini key.
+- **Does it work with HackerRank, LeetCode, CodeSignal?** Yes - screenshot capture works in any application.
+- **Do I need an API key?** Yes, a free Google Gemini API key from Google AI Studio.
+- **Is voice input required?** No. Optional. Use screenshots and chat instead.
+- **Is my data collected?** No telemetry. Everything stays local except the AI requests you send.
+- **Is it free?** Yes, MIT licensed.
+- **Which platforms?** Windows (installer), Linux (.deb, AppImage), macOS (source).
+- **Will it get me caught in an interview?** Intended for learning, practice, and authorized use. Always follow the rules of any interview you take.
+
+## Related links
+
+- GitHub releases: https://github.com/TechyCSR/OpenCluely/releases/latest
+- Releases feed (Atom): https://github.com/TechyCSR/OpenCluely/releases.atom
+- Issue tracker: https://github.com/TechyCSR/OpenCluely/issues
+- Developer site: https://techycsr.dev
+- llms-full.txt: https://opencluely.techycsr.dev/llms-full.txt
+- sitemap: https://opencluely.techycsr.dev/sitemap.xml
+- robots: https://opencluely.techycsr.dev/robots.txt

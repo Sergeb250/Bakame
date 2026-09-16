@@ -1,0 +1,53 @@
+        .markdown-content {
+            line-height: 1.6;
+            color: inherit;
+            font-size: 0.875rem;
+        }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+            margin-top: 1.2rem;
+            margin-bottom: 0.8rem;
+            font-weight: bold;
+            color: inherit;
+        }
+        .markdown-content h1 { font-size: 1.2rem; }
+        .markdown-content h2 { font-size: 1.1rem; }
+        .markdown-content h3 { font-size: 1rem; }
+        .markdown-content p { margin-bottom: 0.8rem; color: inherit; font-size: 0.875rem; }
+        .markdown-content ul, .markdown-content ol { margin-bottom: 0.8rem; padding-left: 1.2rem; font-size: 0.875rem; }
+        .markdown-content li { margin-bottom: 0.4rem; color: inherit; font-size: 0.875rem; }
+        .markdown-content code { 
+            background-color: rgba(0, 0, 0, 0.4); 
+            padding: 0.2rem 0.4rem; 
+            border-radius: 0.25rem; 
+            font-family: 'Courier New', monospace;
+            color: inherit;
+        }
+        .markdown-content pre { 
+            background-color: rgba(0, 0, 0, 0.4); 
+            padding: 1rem; 
+            border-radius: 0.5rem; 
+            margin: 1rem 0;
+            overflow-x: auto;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .markdown-content pre code { 
+            background-color: transparent; 
+            padding: 0; 
+            color: inherit;
+        }
+        .markdown-content blockquote {
+            border-left: 4px solid #6b7280;
+            padding-left: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+            color: inherit;
+        }
+        .math {
+            font-family: 'Cambria Math', 'STIX Two Math', 'Latin Modern Math', Georgia, serif;
+            white-space: nowrap;
+        }
+        .markdown-content sup, .markdown-content sub {
+            font-size: 0.72em;
+            line-height: 0;
+        }
+

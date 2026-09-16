@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bakame - AI Response</title>
+  <link rel="stylesheet" href="./src/ui/protected-controls.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./src/ui/response-markdown.css">
+  <link rel="stylesheet" href="./src/ui/response-window.css">
+  <script src="./src/ui/protected-controls.js"></script>
+  <script src="./node_modules/marked/lib/marked.umd.js"></script>
+  <script src="lib/mathrender.js"></script>
+</head>
+<body>
+  <main class="assistant-window">
+    <header class="window-header">
+      <span class="window-title"><i class="fas fa-grip-vertical" aria-hidden="true"></i> AI Response</span>
+      <select id="activeSkill" aria-label="Active skill" disabled><option value="general">General Assistant</option></select>
+      <div class="window-controls">
+        <button id="captureButton" aria-label="Ask about a screenshot" data-tooltip="Ask about a screenshot"><i class="fas fa-camera" aria-hidden="true"></i></button>
+        <button id="settingsButton" aria-label="Settings" data-tooltip="Settings"><i class="fas fa-gear" aria-hidden="true"></i></button>
+        <button id="clearHistoryBtn" aria-label="Clear conversation" data-tooltip="Clear conversation"><i class="fas fa-eraser" aria-hidden="true"></i></button>
+        <button id="minimizeButton" aria-label="Minimize to dot" data-tooltip="Minimize to dot"><i class="fas fa-minus" aria-hidden="true"></i></button>
+        <button id="close-window-btn" aria-label="Close conversation" data-tooltip="Close"><i class="fas fa-xmark" aria-hidden="true"></i></button>
+      </div>
+    </header>
+    <div id="interactionHint" class="interaction-hint" hidden>Click-through is on. Press Alt+A to type or use the controls.</div>
+    <section id="conversation" class="conversation" aria-label="Conversation" tabindex="0">
+      <div id="emptyState" class="empty-state">
+        <i class="fas fa-comments" aria-hidden="true"></i>
+        <h1>Ask, speak, or capture a question</h1>
+        <p>Your prompts and live answers stay here.</p>
+        <p class="empty-detail">Choose microphone + computer audio to hear both sides of a meeting.</p>
+      </div>
+      <div id="chatMessages"></div>
+    </section>
+    <footer class="composer">
+      <div id="interimOverlay" class="interim-transcript" aria-live="polite" hidden></div>
+      <div class="voice-controls">
+        <button id="listenButton" class="listen-button" aria-pressed="false"><i class="fas fa-microphone" aria-hidden="true"></i><span id="listenLabel">Listen</span></button>
+        <select id="audioSource" aria-label="Audio source" disabled>
+          <option value="both">Microphone + computer audio</option>
+          <option value="microphone">Microphone</option>
+          <option value="system">Computer audio</option>
+        </select>
+        <progress id="voiceLevel" max="1" value="0" aria-label="Audio input level"></progress>
+      </div>
+      <div id="voiceStatusText" class="voice-status" role="status">Ready</div>
+      <form id="promptForm" class="prompt-form">
+        <textarea id="messageInput" rows="2" aria-label="Your prompt" placeholder="Ask a question or follow up..."></textarea>
+        <button id="sendButton" class="send-button" type="submit" aria-label="Send prompt"><i class="fas fa-arrow-up" aria-hidden="true"></i><span>Send</span></button>
+      </form>
+      <div class="composer-hint">Enter to send &middot; Shift+Enter for a new line &middot; Listen answers after a pause</div>
+      <div id="assistantError" class="assistant-error" role="alert" hidden></div>
+    </footer>
+  </main>
+  <script src="./src/ui/response-window.js"></script>
+</body>
+</html>

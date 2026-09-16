@@ -34,7 +34,7 @@ npm run build:win
 node scripts/verify-windows-package.js
 ```
 
-Download executable from project github project  releases:
+**Download executable from project github project  releases:**
 
 
 

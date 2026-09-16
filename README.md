@@ -10,7 +10,8 @@ Based on OpenCluely by [TechyCSR](https://github.com/TechyCSR/OpenCluely) and co
 
 ## Summary
 
-Bakame is a desktop AI assistant that stays in a small floating overlay. It can listen to microphone audio, computer audio, or both, then answer in a single AI response window with typed chat and live voice prompts.
+Bakame is an enhanced version of OpenCluely and an open-source **alternative to Cluely**, featuring a floating desktop AI assistant, microphone/computer audio support, typed chat, live voice prompts, Interview Mode, and Exam Mode.
+
 
 Prompts appear in white. Answers appear in green. Interview mode gives short, natural answers with examples when useful. Exam mode detects questions and answers directly.
 
